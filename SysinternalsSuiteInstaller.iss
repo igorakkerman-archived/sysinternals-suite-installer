@@ -118,9 +118,8 @@ Name: {group}\AccessEnum; Filename: {app}\AccessEnum.exe
 Name: {group}\AdExplorer; Filename: {app}\ADExplorer.exe
 Name: {group}\AdInsight; Filename: {app}\ADInsight.exe
 Name: {group}\Autologon; Filename: {app}\Autologon.exe
-Name: {group}\Autoruns; Filename: {app}\Autoruns.exe
-Name: {group}\Autorunsc; Filename: {app}\autorunsc.exe
-Name: {group}\BgInfo; Filename: {app}\Bginfo.exe
+Name: {group}\Autoruns; Filename: {app}\Autoruns64.exe
+Name: {group}\BgInfo; Filename: {app}\Bginfo64.exe
 Name: {group}\CacheSet; Filename: {app}\Cacheset.exe
 Name: {group}\DebugView; Filename: {app}\Dbgview.exe
 Name: {group}\Desktops; Filename: {app}\Desktops.exe
@@ -130,7 +129,7 @@ Name: {group}\DiskView; Filename: {app}\DiskView.exe
 Name: {group}\LoadOrder; Filename: {app}\LoadOrd.exe
 Name: {group}\PageDefrag; Filename: {app}\pagedfrg.exe
 Name: {group}\PortMon; Filename: {app}\portmon.exe
-Name: {group}\Process Explorer; Filename: {app}\procexp.exe
+Name: {group}\Process Explorer; Filename: {app}\procexp64.exe
 Name: {group}\Process Monitor; Filename: {app}\Procmon.exe
 Name: {group}\RAMMap; Filename: {app}\RAMMap.exe
 Name: {group}\RootkitRevealer; Filename: {app}\RootkitRevealer.exe
@@ -143,17 +142,18 @@ Name: {group}\WinObj; Filename: {app}\Winobj.exe
 Name: {group}\ZoomIt; Filename: {app}\ZoomIt.exe
 
 ; Command-line-based utilities 
-Name: {group}\{#CommandLineFolder}\AccessChk; Filename: {app}\accesschk.exe
+Name: {group}\{#CommandLineFolder}\AccessChk; Filename: {app}\accesschk64.exe
 Name: {group}\{#CommandLineFolder}\AdRestore; Filename: {app}\adrestore.exe
-Name: {group}\{#CommandLineFolder}\ClockRes; Filename: {app}\Clockres.exe
-Name: {group}\{#CommandLineFolder}\Contig; Filename: {app}\Contig.exe
-Name: {group}\{#CommandLineFolder}\Coreinfo; Filename: {app}\Coreinfo.exe
+Name: {group}\{#CommandLineFolder}\Autorunsc; Filename: {app}\autorunsc64.exe
+Name: {group}\{#CommandLineFolder}\ClockRes; Filename: {app}\Clockres64.exe
+Name: {group}\{#CommandLineFolder}\Contig; Filename: {app}\Contig64.exe
+Name: {group}\{#CommandLineFolder}\Coreinfo; Filename: {app}\Coreinfo64.exe
 Name: {group}\{#CommandLineFolder}\Ctrl2Cap; Filename: {app}\ctrl2cap.exe
 Name: {group}\{#CommandLineFolder}\DiskExt; Filename: {app}\diskext.exe
 Name: {group}\{#CommandLineFolder}\Disk Usage (DU); Filename: {app}\du.exe
 Name: {group}\{#CommandLineFolder}\EFSDump; Filename: {app}\efsdump.exe
 Name: {group}\{#CommandLineFolder}\FindLinks; Filename: {app}\FindLinks.exe
-Name: {group}\{#CommandLineFolder}\Handle; Filename: {app}\handle.exe
+Name: {group}\{#CommandLineFolder}\Handle; Filename: {app}\handle64.exe
 Name: {group}\{#CommandLineFolder}\Hex2dec; Filename: {app}\hex2dec.exe
 Name: {group}\{#CommandLineFolder}\Junction; Filename: {app}\junction.exe
 Name: {group}\{#CommandLineFolder}\LDMDump; Filename: {app}\ldmdump.exe
@@ -163,10 +163,8 @@ Name: {group}\{#CommandLineFolder}\LogonSessions; Filename: {app}\logonsessions.
 Name: {group}\{#CommandLineFolder}\MoveFile; Filename: {app}\movefile.exe
 Name: {group}\{#CommandLineFolder}\NTFSInfo; Filename: {app}\ntfsinfo.exe
 Name: {group}\{#CommandLineFolder}\PendMoves; Filename: {app}\pendmoves.exe
-Name: {group}\{#CommandLineFolder}\PipeList; Filename: {app}\pipelist.exe
-Name: {group}\{#CommandLineFolder}\ProcDump; Filename: {app}\procdump.exe
-; Removed in 2011-09-01 version
-;Name: {group}\{#CommandLineFolder}\ProcFeatures; Filename: {app}\ProcFeatures.exe
+Name: {group}\{#CommandLineFolder}\PipeList; Filename: {app}\pipelist64.exe
+Name: {group}\{#CommandLineFolder}\ProcDump; Filename: {app}\procdump64.exe
 Name: {group}\{#CommandLineFolder}\PsExec; Filename: {app}\PsExec.exe
 Name: {group}\{#CommandLineFolder}\PsFile; Filename: {app}\psfile.exe
 Name: {group}\{#CommandLineFolder}\PsGetSid; Filename: {app}\PsGetsid.exe
