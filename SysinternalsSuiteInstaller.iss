@@ -1,90 +1,97 @@
-;-------------------------------------------------------------------------------
 
-; This script was created by 
-; Andres Cabezas ( andres.cabezas@domador.net )
-; of Domador Software S.R.L. ( http://wwww.domador.net )
-; Copyright information can be found at the bottom of the script.
+;------------------------------------------------------------------------------
 
-;-------------------------------------------------------------------------------
+; Copyright (C) 2016 Domador Software S.R.L.
+; Copyright (C) 2020 Igor Akkerman
 
-#define ApplicationBaseName "SysinternalsSuite"
-#define ApplicationFullName "Sysinternals Suite"
+; Permission is hereby granted, free of charge, to any person obtaining a copy
+; of this software and associated documentation files (the "Software"), to deal
+; in the Software without restriction, including without limitation the rights
+; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+; copies of the Software, and to permit persons to whom the Software is
+; furnished to do so, subject to the following conditions:
 
-; Update this line to the date of the latest Sysinternals Suite release 
-; (or choose your own version-numbering scheme)
-#define ApplicationVersion "2016.2.2"
+; The above copyright notice and this permission notice shall be included in
+; all copies or substantial portions of the Software.
 
-#define ApplicationURL "http://technet.microsoft.com/en-us/sysinternals/"
-;#define ApplicationURL "http://www.sysinternals.com/"
+; THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+; THE SOFTWARE.
 
-; Comment out the following line and uncomment the second one in order to place help files, EULA, etc.
-; in the same program group as the main Sysinternals utilities' shortcuts
+;------------------------------------------------------------------------------
+
+#define ApplicationName "Sysinternals Suite"
+
+#define ApplicationVersion "1.0.0"
+
+#define ApplicationPublisher "Sysinternals"
+#define ApplicationURL "https://docs.microsoft.com/de-de/sysinternals/"
+
+; Folder containing the Sysinternals Suite files
+#define FilesFolder "SysinternalsSuite"
+
+; Program group folder for help files, EULA, etc.
 #define DocumentationFolder "Documentation"
-;#define DocumentationFolder "."
 
-; Comment out the following line and uncomment the second one in order to place the command-line utilities
-; in the same program group as the main Sysinternals utilities' shortcuts
+; Program group folder for command-line utilities
 #define CommandLineFolder "Command Line"
-;#define CommandLineFolder "."
 
 ; Filenames for the compiled installer
-#define InstallerBaseName ApplicationBaseName + "Setup"
+#define InstallerBaseName ApplicationName + " Setup"
 #define InstallerFullName InstallerBaseName + ".exe"
-#define ExternalInstallerBaseName InstallerBaseName + "_External"
-#define ExternalInstallerFullName ExternalInstallerBaseName + ".exe"
 
-; Filenames for the sourcecode
-#define SourceFullName ApplicationBaseName + "Installer.iss"
-#define SourceExternalFullName ApplicationBaseName + "Installer_External.iss"
+; Filename for the sourcecode
+#define SourceFullName ApplicationName + "Installer.iss"
 
 ;-------------------------------------------------------------------------------
 
 [Setup]
-; Comment out this line when creating the external installer
-LicenseFile=Eula.txt
+ArchitecturesInstallIn64BitMode=x64
 
-; Comment out the first line to create the external installer, or the second line to create the bundled installer.
 OutputBaseFilename={#InstallerBaseName}
-;OutputBaseFilename={#ExternalInstallerBaseName}
 
 SourceDir=.
-AppName={#ApplicationFullName}
-DefaultDirName={pf}\{#ApplicationFullName}
-DefaultGroupName={#ApplicationFullName}
+AppName={#ApplicationName}
+DefaultDirName={pf}\{#ApplicationName}
+DefaultGroupName={#ApplicationName}
 OutputDir=.
 
 ; Control Panel information
 AppPublisherURL={#ApplicationURL}
 AppVersion={#ApplicationVersion}
+AppVerName={#ApplicationName}
+AppPublisher={#ApplicationPublisher}
 
 ; Installer icon (if you'd like to provide one)
 ;SetupIconFile=.\SysinternalsSuite.ico
 
 ; Installer information
-VersionInfoProductName={#ApplicationFullName}
+VersionInfoProductName={#ApplicationName}
 VersionInfoVersion={#ApplicationVersion}
 
 ;-------------------------------------------------------------------------------
 
 [Files]
-; Comment out the first line to create the external installer, or the second line to create the bundled installer.
-Source: "*";  DestDir: {app}; Excludes: "{#InstallerFullName},{#ExternalInstallerFullName},{#SourceFullName},{#SourceExternalFullName}"; 
-;Source: "{src}\*";  DestDir: {app}; Flags: external;
+Source: "{src}\{#FilesFolder}\*";  DestDir: {app}; Flags: external;
 
 ;-------------------------------------------------------------------------------
 [Icons]
 
 ;; Uninstall program
-Name: {group}\Uninstall {#ApplicationFullName}; Filename: {uninstallexe}
+Name: {group}\Uninstall {#ApplicationName}; Filename: {uninstallexe}
 
 ;; Documentation
 
 ; Web page icon in program folder
-Name: {group}\{#DocumentationFolder}\{#ApplicationFullName} Website; Filename: {#ApplicationURL}
+Name: {group}\{#DocumentationFolder}\{#ApplicationName} Website; Filename: {#ApplicationURL}
 
 ; EULA and other documentation
-Name: {group}\{#DocumentationFolder}\{#ApplicationFullName} License; Filename: {app}\Eula.txt
-Name: {group}\{#DocumentationFolder}\{#ApplicationFullName} Readme; Filename: {app}\readme.txt
+Name: {group}\{#DocumentationFolder}\{#ApplicationName} License; Filename: {app}\Eula.txt
+Name: {group}\{#DocumentationFolder}\{#ApplicationName} Readme; Filename: {app}\readme.txt
 Name: {group}\{#DocumentationFolder}\PsTools Version; Filename: {app}\psversion.txt
 
 ; Help files
@@ -186,27 +193,3 @@ Name: {group}\{#CommandLineFolder}\Testlimit; Filename: {app}\Testlimit.exe
 Name: {group}\{#CommandLineFolder}\Testlimit64; Filename: {app}\Testlimit64.exe
 Name: {group}\{#CommandLineFolder}\Volumeid; Filename: {app}\Volumeid.exe
 Name: {group}\{#CommandLineFolder}\WhoIs; Filename: {app}\whois.exe
-
-;------------------------------------------------------------------------------
-
-; Copyright (C) 2016 Domador Software S.R.L.
-
-; Permission is hereby granted, free of charge, to any person obtaining a copy
-; of this software and associated documentation files (the "Software"), to deal
-; in the Software without restriction, including without limitation the rights
-; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-; copies of the Software, and to permit persons to whom the Software is
-; furnished to do so, subject to the following conditions:
-
-; The above copyright notice and this permission notice shall be included in
-; all copies or substantial portions of the Software.
-
-; THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-; THE SOFTWARE.
-
-;------------------------------------------------------------------------------
