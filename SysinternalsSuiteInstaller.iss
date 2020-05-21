@@ -125,13 +125,12 @@ Name: {group}\Desktops; Filename: {app}\Desktops.exe
 Name: {group}\Disk2vhd; Filename: {app}\disk2vhd.exe
 Name: {group}\DiskMon; Filename: {app}\Diskmon.exe
 Name: {group}\DiskView; Filename: {app}\DiskView.exe
-Name: {group}\LoadOrder; Filename: {app}\LoadOrd.exe
+Name: {group}\LoadOrder; Filename: {app}\LoadOrd64.exe
 Name: {group}\PageDefrag; Filename: {app}\pagedfrg.exe
 Name: {group}\PortMon; Filename: {app}\portmon.exe
 Name: {group}\Process Explorer; Filename: {app}\procexp64.exe
-Name: {group}\Process Monitor; Filename: {app}\Procmon.exe
+Name: {group}\Process Monitor; Filename: {app}\Procmon64.exe
 Name: {group}\RAMMap; Filename: {app}\RAMMap.exe
-Name: {group}\RootkitRevealer; Filename: {app}\RootkitRevealer.exe
 Name: {group}\ShareEnum; Filename: {app}\ShareEnum.exe
 Name: {group}\ShellRunas; Filename: {app}\ShellRunas.exe
 Name: {group}\TCPVcon; Filename: {app}\Tcpvcon.exe
