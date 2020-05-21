@@ -26,7 +26,8 @@
 
 #define ApplicationName "Sysinternals Suite"
 
-#define ApplicationVersion "1.0.0"
+; TODO: fetch release date and use it as application version
+; #define ApplicationVersion 
 
 #define ApplicationPublisher "Sysinternals"
 #define ApplicationURL "https://docs.microsoft.com/de-de/sysinternals/"
@@ -62,7 +63,8 @@ OutputDir=.
 
 ; Control Panel information
 AppPublisherURL={#ApplicationURL}
-AppVersion={#ApplicationVersion}
+; TODO: fetch release date and use it as application version
+; AppVersion={#ApplicationVersion}
 AppVerName={#ApplicationName}
 AppPublisher={#ApplicationPublisher}
 
@@ -71,7 +73,8 @@ AppPublisher={#ApplicationPublisher}
 
 ; Installer information
 VersionInfoProductName={#ApplicationName}
-VersionInfoVersion={#ApplicationVersion}
+; TODO: fetch release date and use it as application version
+; VersionInfoVersion={#ApplicationVersion}
 
 ;-------------------------------------------------------------------------------
 
