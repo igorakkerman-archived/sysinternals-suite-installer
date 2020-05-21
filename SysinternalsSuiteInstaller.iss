@@ -42,8 +42,7 @@
 #define CommandLineFolder "Command Line"
 
 ; Filenames for the compiled installer
-#define InstallerBaseName ApplicationName + " Setup"
-#define InstallerFullName InstallerBaseName + ".exe"
+#define InstallerBaseName "SysinternalsSuiteSetup"
 
 ; Filename for the sourcecode
 #define SourceFullName ApplicationName + "Installer.iss"
