@@ -56,7 +56,7 @@ OutputBaseFilename={#InstallerBaseName}
 
 SourceDir=.
 AppName={#ApplicationName}
-DefaultDirName={pf}\{#ApplicationName}
+DefaultDirName={autopf64}\{#ApplicationName}
 DefaultGroupName={#ApplicationName}
 OutputDir=.
 
