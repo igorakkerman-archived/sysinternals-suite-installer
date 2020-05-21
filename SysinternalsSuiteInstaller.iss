@@ -99,18 +99,17 @@ Name: {group}\{#DocumentationFolder}\DiskMon Help; Filename: {app}\DISKMON.HLP
 Name: {group}\{#DocumentationFolder}\PageDefrag Help; Filename: {app}\pagedfrg.hlp
 Name: {group}\{#DocumentationFolder}\PortMon Help; Filename: {app}\PORTMON.HLP
 Name: {group}\{#DocumentationFolder}\WinObj Help; Filename: {app}\WINOBJ.HLP
+Name: {group}\{#DocumentationFolder}\TCPView Help (HLP); Filename: {app}\TCPVIEW.hlp
 
 Name: {group}\{#DocumentationFolder}\AdExplorer Help; Filename: {app}\AdExplorer.chm
 Name: {group}\{#DocumentationFolder}\AdInsight Help; Filename: {app}\ADInsight.chm
 Name: {group}\{#DocumentationFolder}\Autoruns Help; Filename: {app}\autoruns.chm
-Name: {group}\{#DocumentationFolder}\DebugView Help; Filename: {app}\dbgview.chm
+Name: {group}\{#DocumentationFolder}\DebugView Help; Filename: {app}\Dbgview.chm
 Name: {group}\{#DocumentationFolder}\Disk2vhd Help; Filename: {app}\Disk2vhd.chm
 Name: {group}\{#DocumentationFolder}\Process Explorer Help; Filename: {app}\procexp.chm
 Name: {group}\{#DocumentationFolder}\Process Monitor Help; Filename: {app}\procmon.chm
 Name: {group}\{#DocumentationFolder}\PsTools Help; Filename: {app}\Pstools.chm
-Name: {group}\{#DocumentationFolder}\RootkitRevealer Help; Filename: {app}\RootkitRevealer.chm
 Name: {group}\{#DocumentationFolder}\TCPView Help (CHM); Filename: {app}\tcpview.chm
-Name: {group}\{#DocumentationFolder}\TCPView Help (HLP); Filename: {app}\tcpview.hlp
 Name: {group}\{#DocumentationFolder}\VMMap Help; Filename: {app}\Vmmap.chm
 
 ;; Sysinternals Suite utilities
@@ -140,54 +139,3 @@ Name: {group}\TCPView; Filename: {app}\Tcpview.exe
 Name: {group}\VMMap; Filename: {app}\vmmap.exe
 Name: {group}\WinObj; Filename: {app}\Winobj.exe
 Name: {group}\ZoomIt; Filename: {app}\ZoomIt.exe
-
-; Command-line-based utilities 
-Name: {group}\{#CommandLineFolder}\AccessChk; Filename: {app}\accesschk64.exe
-Name: {group}\{#CommandLineFolder}\AdRestore; Filename: {app}\adrestore.exe
-Name: {group}\{#CommandLineFolder}\Autorunsc; Filename: {app}\autorunsc64.exe
-Name: {group}\{#CommandLineFolder}\ClockRes; Filename: {app}\Clockres64.exe
-Name: {group}\{#CommandLineFolder}\Contig; Filename: {app}\Contig64.exe
-Name: {group}\{#CommandLineFolder}\Coreinfo; Filename: {app}\Coreinfo64.exe
-Name: {group}\{#CommandLineFolder}\Ctrl2Cap; Filename: {app}\ctrl2cap.exe
-Name: {group}\{#CommandLineFolder}\DiskExt; Filename: {app}\diskext.exe
-Name: {group}\{#CommandLineFolder}\Disk Usage (DU); Filename: {app}\du.exe
-Name: {group}\{#CommandLineFolder}\EFSDump; Filename: {app}\efsdump.exe
-Name: {group}\{#CommandLineFolder}\FindLinks; Filename: {app}\FindLinks.exe
-Name: {group}\{#CommandLineFolder}\Handle; Filename: {app}\handle64.exe
-Name: {group}\{#CommandLineFolder}\Hex2dec; Filename: {app}\hex2dec.exe
-Name: {group}\{#CommandLineFolder}\Junction; Filename: {app}\junction.exe
-Name: {group}\{#CommandLineFolder}\LDMDump; Filename: {app}\ldmdump.exe
-Name: {group}\{#CommandLineFolder}\ListDLLs; Filename: {app}\Listdlls.exe
-Name: {group}\{#CommandLineFolder}\LiveKd; Filename: {app}\livekd.exe
-Name: {group}\{#CommandLineFolder}\LogonSessions; Filename: {app}\logonsessions.exe
-Name: {group}\{#CommandLineFolder}\MoveFile; Filename: {app}\movefile.exe
-Name: {group}\{#CommandLineFolder}\NTFSInfo; Filename: {app}\ntfsinfo.exe
-Name: {group}\{#CommandLineFolder}\PendMoves; Filename: {app}\pendmoves.exe
-Name: {group}\{#CommandLineFolder}\PipeList; Filename: {app}\pipelist64.exe
-Name: {group}\{#CommandLineFolder}\ProcDump; Filename: {app}\procdump64.exe
-Name: {group}\{#CommandLineFolder}\PsExec; Filename: {app}\PsExec.exe
-Name: {group}\{#CommandLineFolder}\PsFile; Filename: {app}\psfile.exe
-Name: {group}\{#CommandLineFolder}\PsGetSid; Filename: {app}\PsGetsid.exe
-Name: {group}\{#CommandLineFolder}\PsInfo; Filename: {app}\PsInfo.exe
-Name: {group}\{#CommandLineFolder}\psKill; Filename: {app}\pskill.exe
-Name: {group}\{#CommandLineFolder}\PsList; Filename: {app}\PsList.exe
-Name: {group}\{#CommandLineFolder}\PsLoggedOn; Filename: {app}\PsLoggedon.exe
-Name: {group}\{#CommandLineFolder}\PsLogList; Filename: {app}\psloglist.exe
-Name: {group}\{#CommandLineFolder}\PsPasswd; Filename: {app}\pspasswd.exe
-Name: {group}\{#CommandLineFolder}\PsPing; Filename: {app}\psping.exe
-Name: {group}\{#CommandLineFolder}\PsService; Filename: {app}\PsService.exe
-Name: {group}\{#CommandLineFolder}\PsShutdown; Filename: {app}\psshutdown.exe
-Name: {group}\{#CommandLineFolder}\PsSuspend; Filename: {app}\pssuspend.exe
-Name: {group}\{#CommandLineFolder}\RegDelNull; Filename: {app}\RegDelNull.exe
-Name: {group}\{#CommandLineFolder}\RegJump; Filename: {app}\regjump.exe
-Name: {group}\{#CommandLineFolder}\Ru; Filename: {app}\ru.exe
-Name: {group}\{#CommandLineFolder}\SDelete; Filename: {app}\sdelete.exe
-Name: {group}\{#CommandLineFolder}\SigCheck; Filename: {app}\sigcheck.exe
-Name: {group}\{#CommandLineFolder}\Streams; Filename: {app}\streams.exe
-Name: {group}\{#CommandLineFolder}\Strings; Filename: {app}\strings.exe
-Name: {group}\{#CommandLineFolder}\Sync; Filename: {app}\sync.exe
-Name: {group}\{#CommandLineFolder}\Sysmon; Filename: {app}\Sysmon.exe
-Name: {group}\{#CommandLineFolder}\Testlimit; Filename: {app}\Testlimit.exe
-Name: {group}\{#CommandLineFolder}\Testlimit64; Filename: {app}\Testlimit64.exe
-Name: {group}\{#CommandLineFolder}\Volumeid; Filename: {app}\Volumeid.exe
-Name: {group}\{#CommandLineFolder}\WhoIs; Filename: {app}\whois.exe
