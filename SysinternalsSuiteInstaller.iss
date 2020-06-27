@@ -50,6 +50,7 @@
 ;-------------------------------------------------------------------------------
 
 [Setup]
+
 ArchitecturesInstallIn64BitMode=x64
 
 OutputBaseFilename={#InstallerBaseName}
@@ -77,10 +78,13 @@ VersionInfoProductName={#ApplicationName}
 
 ;-------------------------------------------------------------------------------
 
+
 [Files]
+
 Source: "{src}\{#FilesFolder}\*";  DestDir: {app}; Flags: external;
 
 ;-------------------------------------------------------------------------------
+
 [Icons]
 
 ;; Uninstall program
@@ -140,3 +144,4 @@ Name: {group}\TCPView; Filename: {app}\Tcpview.exe
 Name: {group}\VMMap; Filename: {app}\vmmap.exe
 Name: {group}\WinObj; Filename: {app}\Winobj.exe
 Name: {group}\ZoomIt; Filename: {app}\ZoomIt.exe
+
