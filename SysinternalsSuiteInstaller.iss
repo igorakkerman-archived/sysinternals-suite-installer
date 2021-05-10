@@ -126,18 +126,20 @@ Name: {group}\{#DocumentationFolder}\VMMap Help; Filename: {app}\Vmmap.chm
 
 ;; Sysinternals Suite utilities
 Name: {group}\AccessEnum; Filename: {app}\AccessEnum.exe
-Name: {group}\AdExplorer; Filename: {app}\ADExplorer.exe
-Name: {group}\AdInsight; Filename: {app}\ADInsight.exe
-Name: {group}\Autologon; Filename: {app}\Autologon.exe
+Name: {group}\AdExplorer; Filename: {app}\ADExplorer64.exe
+Name: {group}\AdInsight; Filename: {app}\ADInsight64.exe
+Name: {group}\Autologon; Filename: {app}\Autologon64.exe
 Name: {group}\Autoruns; Filename: {app}\Autoruns64.exe
 Name: {group}\BgInfo; Filename: {app}\Bginfo64.exe
 Name: {group}\CacheSet; Filename: {app}\Cacheset.exe
-Name: {group}\DebugView; Filename: {app}\Dbgview.exe
+Name: {group}\CPUStress; Filename: {app}\CPUSTRE64.exe
+Name: {group}\DebugView; Filename: {app}\Dbgview64.exe
 Name: {group}\Desktops; Filename: {app}\Desktops.exe
 Name: {group}\Disk2vhd; Filename: {app}\disk2vhd.exe
 Name: {group}\DiskMon; Filename: {app}\Diskmon.exe
-Name: {group}\DiskView; Filename: {app}\DiskView.exe
+Name: {group}\DiskView; Filename: {app}\DiskView64.exe
 Name: {group}\LoadOrder; Filename: {app}\LoadOrd64.exe
+Name: {group}\NotMyFault; Filename: {app}\NotMyFault64.exe
 Name: {group}\PageDefrag; Filename: {app}\pagedfrg.exe
 Name: {group}\PortMon; Filename: {app}\portmon.exe
 Name: {group}\Process Explorer; Filename: {app}\procexp64.exe
@@ -146,10 +148,10 @@ Name: {group}\RAMMap; Filename: {app}\RAMMap.exe
 Name: {group}\ShareEnum; Filename: {app}\ShareEnum.exe
 Name: {group}\ShellRunas; Filename: {app}\ShellRunas.exe
 Name: {group}\TCPVcon; Filename: {app}\Tcpvcon.exe
-Name: {group}\TCPView; Filename: {app}\Tcpview.exe
-Name: {group}\VMMap; Filename: {app}\vmmap.exe
-Name: {group}\WinObj; Filename: {app}\Winobj.exe
-Name: {group}\ZoomIt; Filename: {app}\ZoomIt.exe
+Name: {group}\TCPView; Filename: {app}\Tcpview64.exe
+Name: {group}\VMMap; Filename: {app}\vmmap64.exe
+Name: {group}\WinObj; Filename: {app}\Winobj64.exe
+Name: {group}\ZoomIt; Filename: {app}\ZoomIt64.exe
 
 ;-------------------------------------------------------------------------------
 
