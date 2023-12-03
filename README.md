@@ -1,5 +1,15 @@
 # Windows Installer for Sysinternals Suite
 
+⚠️ 
+
+This project has been archived in favor of [Sysinternals Suite in the Microsoft Store](https://apps.microsoft.com/detail/9P7KNL5RWT25). You can easily install Sysinternals Suite using [WinGet](https://github.com/microsoft/winget-cli): 
+```powershell
+winget install "Sysinternals Suite"
+```
+If you want to continue developing this installer, feel free to clone the repo and take over this project. Thanks to all supporters.
+
+⚠️
+
 ## Usage
 1. Use a temporary folder, e.g. C:\Temp
 1. Download `SysinternalsSuiteSetup.exe` installer
